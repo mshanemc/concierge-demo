@@ -1,5 +1,5 @@
 # sfdx force:org:create -f config/project-scratch-def.json -d 1 -s
-sfdx shane:org:create -f config/snapshot-project-scratch-def.json -d 1 -s -n --userprefix concierge --userdomain work.shop
+sfdx shane:org:create -f config/snapshot-project-scratch-def.json -d 7 -s -n --userprefix concierge --userdomain work.shop
 
 # to get access to audit field create
 sfdx force:source:deploy -p securityStuff/
