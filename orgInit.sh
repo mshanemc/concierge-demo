@@ -11,4 +11,9 @@ sfdx force:data:bulk:upsert -f data/Knowledge__kav.csv -i id -s Knowledge__kav -
 
 sfdx force:apex:execute -f scripts/conciergeSetup.cls
 
+sfdx shane:data:favorite -o Knowledge__kav -w "title='Flickering Monitor'"
+sfdx shane:listview:favorite -t Open_IT_Tickets -o Case
+sfdx shane:tab:favorite -t cncrgdemo__Concierge_LEX_Tab -l "Conciege in Lightning"
+sfdx shane:tab:favorite -t cncrgdemo__Concierge -l "Conciege Standalone"
+
 sfdx force:org:open
