@@ -16,4 +16,4 @@ sfdx shane:listview:favorite -t Open_IT_Tickets -o Case
 sfdx shane:tab:favorite -t cncrgdemo__Concierge_LEX_Tab -l "Conciege in Lightning"
 sfdx shane:tab:favorite -t cncrgdemo__Concierge -l "Conciege Standalone"
 
-sfdx force:org:open
+sfdx force:org:open -p lightning/n/cncrgdemo__Concierge_LEX_Tab
