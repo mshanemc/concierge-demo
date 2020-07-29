@@ -1,14 +1,18 @@
 {
-  "orgName": "concierge-workshop",
+  "orgName": "concierge-demo",
   "adminEmail": "platformpmmdemos@gmail.com",
   "edition": "Developer",
   "features": [
     "Knowledge",
     "LightningServiceConsole",
+    "Communities",
     "LiveAgent",
     "ServiceCloud"
   ],
   "settings": {
+    "communitiesSettings": {
+      "enableNetworksEnabled": true
+    },
     "liveAgentSettings": {
       "enableLiveAgent": true
     },
@@ -19,11 +23,11 @@
     "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true
     },
-    "pathAssistantSettings": {
-      "pathAssistantEnabled": true
-    },
     "mobileSettings": {
       "enableS1EncryptedStoragePref2": false
+    },
+    "pathAssistantSettings": {
+      "pathAssistantEnabled": true
     },
     "securitySettings": {
       "passwordPolicies": {
