@@ -15,7 +15,7 @@ cncrgdemo2__Search_Types_Settings__c x = new cncrgdemo2__Search_Types_Settings__
 x.cncrgdemo2__Active__c = true;
 x.Name = 'Concierge';
 x.cncrgdemo2__Article_Type_API_Name__c = 'Concierge';
-x.cncrgdemo2__Field_To_Display__c = 'Summary,';
+x.cncrgdemo2__Fields_To_Display_1__c = 'Summary';
 insert x;
 
 // put the contact on our user
