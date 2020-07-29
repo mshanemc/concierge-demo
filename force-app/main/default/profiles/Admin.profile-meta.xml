@@ -6,7 +6,7 @@
         <endAddress>255.255.255.255</endAddress>
     </loginIpRanges>
     <applicationVisibilities>
-        <application>cncrgdemo__Cadalys_Concierge</application>
+        <application>cncrgdemo2__Cadalys_Concierge</application>
         <default>false</default>
         <visible>false</visible>
     </applicationVisibilities>

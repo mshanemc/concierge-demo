@@ -1,27 +1,27 @@
 // update some Concierge settings
-list<cncrgdemo__Concierge_Settings__c> settings = [select id, name, cncrgdemo__Value__c from cncrgdemo__Concierge_Settings__c];
-for (cncrgdemo__Concierge_Settings__c setting:settings) {
+list<cncrgdemo2__Concierge_Settings__c> settings = [select id, name, cncrgdemo2__Value__c from cncrgdemo2__Concierge_Settings__c];
+for (cncrgdemo2__Concierge_Settings__c setting:settings) {
     if (setting.name == 'Background file name for App') {
-        setting.cncrgdemo__Value__c = 'Bridge';
+        setting.cncrgdemo2__Value__c = 'Bridge';
     } else if (setting.name == 'Display Company Logo') {
-        setting.cncrgdemo__Value__c = 'false';
+        setting.cncrgdemo2__Value__c = 'false';
     } else if (setting.name == 'Text to Display in Article Preview'){
-        setting.cncrgdemo__Value__c = 'false';
+        setting.cncrgdemo2__Value__c = 'false';
     }
 }
 update settings;
 
-cncrgdemo__Search_Types_Settings__c x = new cncrgdemo__Search_Types_Settings__c();
-x.cncrgdemo__Active__c = true;
+cncrgdemo2__Search_Types_Settings__c x = new cncrgdemo2__Search_Types_Settings__c();
+x.cncrgdemo2__Active__c = true;
 x.Name = 'Concierge';
-x.cncrgdemo__Article_Type_API_Name__c = 'Concierge';
-x.cncrgdemo__Field_To_Display__c = 'Summary,';
+x.cncrgdemo2__Article_Type_API_Name__c = 'Concierge';
+x.cncrgdemo2__Field_To_Display__c = 'Summary,';
 insert x;
 
 // put the contact on our user
 List<case> cases = new List<case>();
 
-contact jn = new contact(FirstName = 'Jenny', LastName = 'Nunez', Email = 'shane.mclaughlin@salesforce.com', cncrgdemo__UserId__c = UserInfo.getUserId());
+contact jn = new contact(FirstName = 'Jenny', LastName = 'Nunez', Email = 'shane.mclaughlin@salesforce.com', cncrgdemo2__UserId__c = UserInfo.getUserId());
 insert jn;
 
 // let's have some ticket history for Jenny
