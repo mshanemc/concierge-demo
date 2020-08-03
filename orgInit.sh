@@ -18,8 +18,7 @@ sfdx force:apex:execute -f scripts/conciergeSetup.cls
 sfdx shane:data:favorite -o Knowledge__kav -w "title='Flickering Monitor'"
 sfdx shane:listview:favorite -t Open_IT_Tickets -o Case
 sfdx shane:listview:favorite -t published_articles -o Knowledge__kav -l "Published Articles" 
-sfdx shane:tab:favorite -t cncrgdemo2__Concierge_LEX_Tab -l "Conciege in Lightning"
-sfdx shane:tab:favorite -t cncrgdemo2__Concierge -l "Conciege Standalone"
-sfdx shane:tab:favorite -t cncrgdemo2__Settings_Page -l "Conciege Settings"
+sfdx shane:tab:favorite -t cncrgdemo2__Cadalys_Concierge -l "Concierge in Lightning"
+sfdx shane:tab:favorite -t cncrgdemo2__Concierge_Settings -l "Concierge Settings"
 
-sfdx force:org:open -p lightning/n/cncrgdemo2__Concierge_LEX_Tab
+sfdx force:org:open -p lightning/n/cncrgdemo2__Cadalys_Concierge
