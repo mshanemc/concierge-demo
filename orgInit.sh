@@ -14,6 +14,7 @@ sfdx force:data:record:create -s cncrgdemo2__Background_Settings__c -v "cncrgdem
 sfdx force:data:bulk:upsert -f data/Knowledge__kav.csv -i id -s Knowledge__kav --wait 30
 
 sfdx force:apex:execute -f scripts/conciergeSetup.cls
+sfdx automig:load -d data2
 
 sfdx shane:data:favorite -o Knowledge__kav -w "title='Flickering Monitor'"
 sfdx shane:listview:favorite -t Open_IT_Tickets -o Case
